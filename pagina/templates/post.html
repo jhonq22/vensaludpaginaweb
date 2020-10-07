@@ -1,0 +1,101 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %} Noticias {% endblock titulo %}
+
+
+{% block contenido %}
+    
+<section class="space sub-header">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sub-header_content animate__animated animate__fadeInRight">
+                  
+                    <h2>!Servicios Tecnológicos al Servicio de la Salud!</h4>
+                    <span><i></i></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sub-header_main animate__animated animate__fadeInLeft">
+                    <h2>Noticias</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-8">
+                <form action="#">
+                    <div class="blog-list blog-deatil ">
+                        <img src="{{noticia.imagen_principal.url}}" style="width: 622; height: 414px;" class="img-fluid animate__animated animate__fadeInUp" alt="#">
+                        <div class="blog-date animate__animated animate__fadeInDown">
+                            <h3>05</h3>
+                            <span>JUN</span>
+                        </div>
+                        <div class="blog-text-wrap border-0 pl-0 pr-0 animate__animated animate__fadeInUp">
+                            <div class="blog-comment-top border-0">
+                                <p><i class="far fa-user"></i>{{noticia.fecha_publicacion}}</p>
+                            </div>
+                            <h3 class="text-justify mb-5">{{noticia.titulo}}</h3 class="text-justify mb-5">
+                           
+                            
+                            <div class="blog-text-blok">
+                                {{noticia.contenido|safe}}
+                            </div>
+                           
+                        </div>
+                    </div>
+                
+                  
+                    <hr>
+                   
+                </form>
+            </div>
+            <div class="col-md-4">
+             
+            
+             
+                <div class="blog-sidebar animate__animated animate__fadeInDown">
+                    <div class="blog-sidebar_heading">
+                        <h4>Siguenos</h4>
+                    </div>
+                    <div class="blog-sidebar_wrap">
+                        <ul class="blog-sidebar_social">
+                            <li>
+                                <a href="https://www.facebook.com/pages/category/Medical---Health/VenSalud-340174326835547/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Vensalud_ve" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/vensalud_ve/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blog-join_us animate__animated animate__fadeInDow">
+                    <div class="blog-join_us-content">
+                        <h6>Baner</h6>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+{% endblock contenido %}

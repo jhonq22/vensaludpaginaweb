@@ -1,0 +1,70 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %} Misión {% endblock titulo %}
+
+
+{% block contenido %}
+    
+
+
+<section class="space sub-header">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sub-header_content animate__animated animate__fadeInLeft">
+                  
+                    <h2>!Servicios Tecnológicos al Servicio de la Salud!</h4>
+                    <span><i></i></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sub-header_main animate__animated animate__fadeInUp">
+                    <h2>Visión</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="space animate__animated animate__fadeInUp">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-5 mt-5">
+                <div class="news-img-block">
+                    <img src="{% static 'images/vensalud/vision.jpg' %}" class="img-fluid rounded" alt="#" />
+                    <a class="video-play-button popup-youtube" href="{% static 'images/vensalud/video1.mp4' %}">
+                        <span></span>
+                    </a>
+                    <div id="video-overlay" class="video-overlay">
+                        <a class="video-overlay-close">&times;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="video-play-text">
+                 
+                    <h2>Visión</h2>
+                    <p class="text-justify">
+                        Ser una empresa líder en servicios especializados en
+reparación y mantenimiento de equipos médicos –
+quirúrgico cumpliendo con los procesos y normas
+nacionales e internacionales de calidad aplicables para
+satisfacer las necesidades públicas de salud. 
+</p> 
+
+
+                        
+
+                    <hr />
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+{% endblock contenido %}

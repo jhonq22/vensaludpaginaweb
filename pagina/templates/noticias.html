@@ -1,0 +1,141 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %} Noticias {% endblock titulo %}
+
+
+{% block contenido %}
+    
+<section class="space sub-header">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sub-header_content animate__animated animate__fadeInLeft">
+                  
+                    <h2>!Servicios Tecnológicos al Servicio de la Salud!</h4>
+                    <span><i></i></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sub-header_main animate__animated animate__fadeInUp">
+                    <h2>Noticias</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sub-title_center">
+                    <span ><i>---- Noticias ----</i></span>
+                    <h2 class="h-swing">Ultimas Noticias & Eventos</h2>
+                </div>
+            </div>
+        </div>
+
+      
+     <form action="" method="get">
+        <div class="input-group col-md-4" style="margin-left: 650px; margin-bottom: 30px; margin-top: 30px;">
+            <input class="form-control py-2 rounded" type="text" placeholder="Buscar..." name="buscar" value="{{ request.GET.buscar }}" >
+            <span class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">
+                  <i class="fa fa-search rounded"></i>
+              </button>
+            </span>
+      </div>
+    </form>
+
+      
+
+
+
+        
+        <div class="row ">
+            <div class="col-md-12 animate__animated animate__fadeInLeft">
+                <div class="blog-wrap">
+
+                 {% for noticia in noticias %}
+
+                 <div class="blog-row-block">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="blog-img">
+                                    <img src="{{noticia.imagen_principal.url}}" class="img-fluid rounded" style="width: 200px; height: 200px;" alt="#" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div class="blog-content">
+                                    <h1></h1>
+                                    <span>{{noticia.fecha_publicacion}}</span>
+                                    <h3>
+                                        {{noticia.titulo}}
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-flex align-items-center">
+                                <div class="blog-read-more">
+                                  <a href="{{ noticia.slug }}" class="btn btn-primary h-swing">Ver Noticia</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                 {% endfor %}  
+                 
+
+                  
+
+                   
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center mt-5">
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="row">
+   
+
+        <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6" style="margin-left: 500px;">
+            {% if noticias.has_previous %}
+               <div class="">
+                   <a href="?page={{noticias.previous_page_number}}" class="btn btn-primary float-left">Anterior</a>
+               </div>     
+            {% endif %}  
+            
+            {% if noticias.has_next %}
+            <div class="">
+                <a href="?page={{noticias.next_page_number}}" class="btn btn-primary float-left">Siguiente</a>
+            </div>     
+         {% endif %} 
+        </div>
+
+       
+
+
+  
+
+
+
+
+
+
+
+</div>
+
+    
+{% endblock contenido %}

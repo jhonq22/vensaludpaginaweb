@@ -1,0 +1,79 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %} Misión {% endblock titulo %}
+
+
+{% block contenido %}
+    
+
+
+<section class="space sub-header">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sub-header_content animate__animated animate__fadeInLeft">
+                  
+                    <h2>!Servicios Tecnológicos al Servicio de la Salud!</h4>
+                    <span><i></i></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sub-header_main animate__animated animate__fadeInUp">
+                    <h2>Antecedentes</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="space">
+    <div class="container container-custom animate__animated animate__fadeInUp">
+        <div class="row">
+            <div class="col-md-5 mt-5">
+                <div class="news-img-block">
+                    <img src="{% static 'images/vensalud/antecedentes.jpg' %}" class="img-fluid rounded" alt="#" />
+                    <a class="video-play-button popup-youtube" href="{% static 'images/vensalud/video1.mp4' %}">
+                        <span></span>
+                    </a>
+                    <div id="video-overlay" class="video-overlay">
+                        <a class="video-overlay-close">&times;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="video-play-text">
+                 
+                    <h2>Antecedentes</h2>
+                    <p class="text-justify">
+                        El Gobierno Bolivariano, en el desarrollo de las políticas de construcción del Sistema Público Único Nacional de
+Salud (SPUNS), ha venido realizando grandes esfuerzos en la modernización de la red de centro de salud del
+MPPS, invirtiendo gran cantidad de recursos financieros en la dotación de equipos médicos de avanzada tecnología, que
+permiten mejorar la calidad de la prestación de los servicios para la prevención el diagnóstico y tratamiento de la
+población. VENSALUD, S.A como ente adscrito al MPPS, surge de la necesidad de establecer procesos de gerencia en el
+área del mantenimiento que de respuesta a las tecnologías instaladas, implementando una RED NACIONAL de servicios
+de asistencia técnica a los equipos médicos y a los sistemas asociados a la seguridad de los pacientes, con un sistema de
+gestión que garanticen la operatividad tecnológica del Sistema Público de Salud, asegurando un programa de
+mantenimiento preventivo y correctivo de forma periódica con suministro de piezas, repuestos, personal capacitado y
+contratación de empresas especializadas con alcance internacional.
+
+</p> 
+
+<br>
+
+
+
+                        
+
+                    <hr />
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+{% endblock contenido %}

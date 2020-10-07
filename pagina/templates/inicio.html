@@ -1,0 +1,190 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %} Noticias {% endblock titulo %}
+
+
+{% block contenido %}
+    
+<div class="banner-slider">
+    <div class="banner1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-lg-5">
+                    <!-- Slider Title -->
+                    <div class="main-title main-title-style2 m-5">
+                        
+                        <h1>
+                            Vensalud
+                        </h1>
+                        <p>
+                            En tiempos difíciles nuestro compromiso se fortalece, tenemos un gran equipo de profesionales que no descansa para garantizar la atención médica que mereces. Pon de tu parte, nosotros ponemos el resto.
+                        </p>
+                        <a href="{% url 'pagina:noticias' %}" class="btn btn-primary " tabindex="0">Nuestras Noticias</a>
+                        <a href="{% static 'images/vensalud/video1.mp4' %}" class="play-btn popup-youtube h-rotate-360" tabindex="0"><i class="fas fa-play"></i></a>
+                    </div>
+                    <!--//End Slider Title -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="banner1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-lg-5">
+                    <!-- Slider Title -->
+                    <div class="main-title main-title-style2 m-5">
+                     
+                        <h1>
+                            Vensalud
+                        </h1>
+                        <p>
+                            A través del Plan de Rehabilitación de la Red Barrio Adentro, fue entregado en Maracaibo estado Zulia, un Centro de Diagnostico Integral (CDI), totalmente rehabilitado..
+                        </p>
+                        <a href="{% url 'pagina:noticias' %}" class="btn btn-primary" tabindex="0">Nuestras Noticias</a>
+                        <a href="{% static 'images/vensalud/video1.mp4' %}" class="play-btn popup-youtube " tabindex="0"><i class="fas fa-play"></i></a>
+                    </div>
+                    <!--//End Slider Title -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="about-section ">
+    <div class="container container-custom">
+        <div class="row space animate__animated animate__backInLeft">
+            <!-- Service Icon -->
+            <div class="col-md-6">
+                
+                <div class="service-thumbnail services-top-icon services-top-icon2 blue d-flex flex-fill">
+                    <a href="{% url 'pagina:formulario_inscripcion' %}"></a>
+                    <img src="{% static 'images/service-icon7.png' %}" class="img-fluid" alt="#">
+                    <div class="service-thumbnail_text">
+                        <h4 class="mt-3 h-swing">Formulario Inscripcion</h4>
+                        
+                    </div>
+                </a>
+                </div>
+            
+            </div>
+            <!-- Service Icon 02 -->
+       
+            <!-- Service Icon 03 -->
+            <div class="col-md-6">
+                <div class="service-thumbnail services-top-icon services-top-icon2 yellow d-flex flex-fill">
+                    <img src="{% static 'images/service-icon7.png' %}" class="img-fluid" alt="#">
+                    <div class="service-thumbnail_text">
+                        <h4 class="mt-2 h-swing">Formularios Para Tecnico</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <!--//End Service Icon -->
+        </div>
+
+        <div class="row ">
+            <div class="col-md-7 animate__animated animate__fadeInLeft">
+                <div class="news-img-block">
+                    <img src="{% static 'images/vensalud/fotovensalud1.jpg' %}" class="img-fluid rounded w-100" alt="#" />
+                    <!-- <a href="https://www.youtube.com/watch?v=pBFQdxA-apI" class="play-btn popup-youtube"><i class="fas fa-play"></i></a> -->
+                    <a class="video-play-button popup-youtube" href="{% static 'images/vensalud/video1.mp4' %}">
+                        <span></span>
+                    </a>
+
+                    <div id="video-overlay" class="video-overlay">
+                        <a class="video-overlay-close">&times;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-5 animate__animated animate__bounceInRight">
+                <div class="video-play-text">
+                    <h2 class="h-swing">𝑱𝒖𝒏𝒕𝒐𝒔 𝒑𝒐𝒅𝒆𝒎𝒐𝒔.</h2>
+                    <p class="text-justifyhjkvc">En tiempos difíciles nuestro compromiso se fortalece, tenemos un gran equipo de profesionales que no descansa para garantizar la atención médica que mereces. Pon de tu parte, nosotros ponemos el resto.</p>                    
+                   
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="space animate__animated animate__fadeInLeft mt-5">
+    <div class="container container-custom">
+        <div class="row mb-5 mt-5">
+            <div class="col-md-12">
+                <div class="heading-style1">
+                    <span>Nuestros Servicios</span>
+                    <h2>Servicios de alta calidad </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 d-flex flex-fill flex-column">
+                <div class="service-detail_box primary-color-br">
+                    <div class="service-detail-icon">
+                        <div class="service-detail-svg-block primary-color">
+                            <img src="images/009-teeth.svg" alt="#">
+                        </div>
+                        <h2>01</h2>
+                    </div>
+                    <h3>Servicio de Electromedicina</h3>
+                    
+                    
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex flex-fill flex-column">
+                <div class="service-detail_box secondary-color-br">
+                    <div class="service-detail-icon">
+                        <div class="service-detail-svg-block secondary-color">
+                            <img src="images/009-teeth.svg" alt="#">
+                        </div>
+                        <h2>02</h2>
+                    </div>
+                    <h3>Servicio técnico de Electromecánica</h3>
+                    
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex flex-fill flex-column">
+                <div class="service-detail_box tertiary-color-br">
+                    <div class="service-detail-icon">
+                        <div class="service-detail-svg-block tertiary-color">
+                            <img src="images/009-teeth.svg" alt="#">
+                        </div>
+                        <h2>03</h2>
+                    </div>
+                    <h3>Almacenamiento Distribución y Logística de Equipos Médicos</h3>
+                    
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</section>
+
+
+<br>
+<br>
+<br>
+
+
+
+<div class="container">
+    <section class="customer-logos slider">
+      <div class="slide"><img style="width: 80px; height: 80px;" src="{% static 'images/vensalud/logos/espromed.png' %}"></div>
+      <div class="slide"><img style="width: 80px; height: 80px;" src="{% static 'images/vensalud/logos/farmapatria.png' %}"></div>
+      <div class="slide"><img style="width: 80px; height: 80px;" src="{% static 'images/vensalud/logos/labmir.jpg' %}"></div>
+      <div class="slide"><img style="width: 190px; height: 80px;" src="{% static 'images/vensalud/logos/quimbiotec.jpg' %}"></div>
+  
+    </section>
+  </div>
+
+    
+{% endblock contenido %}

@@ -1,0 +1,196 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %} Noticias {% endblock titulo %}
+
+
+{% block contenido %}
+    
+<section class="space sub-header">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sub-header_content animate__animated animate__fadeInLeft">
+                  
+                    <h2>!Servicios Tecnológicos al Servicio de la Salud!</h4>
+                    <span><i></i></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sub-header_main animate__animated animate__fadeInUp">
+                    <h2>Noticias</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sub-title_center">
+                    <span ><i>---- Noticias ----</i></span>
+                    <h2 class="h-swing">Ultimas Noticias & Eventos</h2>
+                </div>
+            </div>
+        </div>
+
+
+        
+       
+            <div class="col-md-12 animate__animated animate__fadeInLeft">
+              
+                <form method="POST">
+                    {% csrf_token %}
+                <div class="row m-3">
+                 <div class="col-6">
+                   <div class="form-group">
+                      <label for="validation01">Cursos</label>
+                      {{ autor_form.curso}}
+                    </div>
+                 </div>
+             </div>          
+                 <div class="row m-3">
+                    <div class="col-6">
+                        <div class="form-group">
+                           <label for="validation01">Cedula</label>
+                           {{ autor_form.cedula}}
+                         </div>
+                      </div>
+
+
+                      <div class="col-6">
+                        <div class="form-group">
+                           <label for="validation01">Cargar Cedula</label>
+                           {{ autor_form.archivo_cedula}}
+                         </div>
+                      </div>
+                 </div>
+
+
+                 <div class="row m-3">
+                    <div class="col-6">
+                        <div class="form-group">
+                           <label for="validation01">Nombres</label>
+                           {{ autor_form.nombres}}
+                         </div>
+                      </div>
+
+
+                      <div class="col-6">
+                        <div class="form-group">
+                           <label for="validation01">Apellidos</label>
+                           {{ autor_form.apellidos}}
+                         </div>
+                      </div>
+                 </div>
+                 
+
+                 <div class="row m-3">
+                    <div class="col-12">
+                        <div class="form-group">
+                           <label for="validation01">Profesión</label>
+                           {{ autor_form.profesion}}
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="row m-3">
+                    <div class="col-12">
+                        <div class="form-group">
+                           <label for="validation01">Nivel de Instrucción</label>
+                           {{ autor_form.nivel_academico}}
+                         </div>
+                     </div>
+                 </div>
+
+
+
+
+                 <div class="row m-3">
+                    <div class="col-6">
+                        <div class="form-group">
+                           <label for="validation01">Estado</label>
+                           {{ autor_form.estado}}
+                         </div>
+                      </div>
+
+
+                      <div class="col-6">
+                        <div class="form-group">
+                           <label for="validation01">Municipio</label>
+                           {{ autor_form.municipio}}
+                         </div>
+                      </div>
+                 </div>
+
+
+
+                 <div class="row m-3">
+                    <div class="col-12">
+                        <div class="form-group">
+                           <label for="validation01">Dirección</label>
+                           {{ autor_form.direccion}}
+                         </div>
+                      </div>
+                    
+                 </div>
+
+
+                 <div class="row m-3">
+                    <div class="col-6">
+                        <div class="form-group">
+                           <label for="validation01">Telefono Celular</label>
+                           {{ autor_form.telefono}}
+                         </div>
+                      </div>
+
+
+                      <div class="col-6">
+                        <div class="form-group">
+                           <label for="validation01">Telefono Local</label>
+                           {{ autor_form.telefono_local}}
+                         </div>
+                      </div>
+                 </div>
+
+
+                 <div class="row m-3">
+                    <div class="col-12">
+                        <div class="form-group">
+                           <label for="validation01">Correo Electronico</label>
+                           {{ autor_form.correo_electronico}}
+                         </div>
+                      </div>
+                    
+                 </div>
+
+
+                 <div class="row m-3">
+                    <div class="col-12">
+                        <div class="form-group">
+                           <label for="validation01">Sintaxis Curricular</label>
+                           {{ autor_form.curriculum}}
+                         </div>
+                      </div>
+                    
+                 </div>
+                 
+
+
+                 <button type="submit">Guardar</button>
+
+              </form>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+    
+{% endblock contenido %}

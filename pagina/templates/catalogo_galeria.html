@@ -1,0 +1,66 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %} Misión {% endblock titulo %}
+
+
+{% block contenido %}
+    
+
+
+<section class="space sub-header">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sub-header_content animate__animated animate__fadeInRight">
+                  
+                    <h2>!Servicios Tecnológicos al Servicio de la Salud!</h2>
+                    <span><i></i></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sub-header_main animate__animated animate__fadeInLeft">
+                    <h2>Galerias</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="space animate__animated animate__fadeInRight">
+    <div class="container container-custom">
+        <div class="row">
+            
+            {% for catalogo in catalogos %}
+            <div class="col-md-4">
+                <div class="news-img-block">
+                    <a class="spotlight"  href="{{catalogo.imagen_principal.url}}">
+                     <img src="{{catalogo.imagen_principal.url}}" class="img-fluid rounded" 
+                     style="width: 800px; height: 260px;" />
+                  </a>
+               </div>
+              </div>
+
+            {% endfor %}  
+                 
+           
+
+
+           
+
+
+
+            
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+    
+{% endblock contenido %}

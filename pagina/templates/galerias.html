@@ -1,0 +1,78 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %} Misión {% endblock titulo %}
+
+
+{% block contenido %}
+    
+
+
+<section class="space sub-header">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sub-header_content animate__animated animate__fadeInRight">
+                  
+                    <h2>!Servicios Tecnológicos al Servicio de la Salud!</h2>
+                    <span><i></i></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sub-header_main animate__animated animate__fadeInLeft">
+                    <h2>Galerias</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="space animate__animated animate__fadeInRight">
+    <div class="container container-custom">
+        <div class="row">
+            
+            {% for galeria in galerias %}
+         
+
+
+            <div class="col-md-4">
+                <a href="{{ galeria.id}}">
+            <div class="col-item">
+                <figure class="c4-izmir img-fluid rounded c4-border-cc-3 c4-image-zoom-out c4-gradient-bottom-right" tabindex="0" style="--primary-color: #7303c0; --secondary-color: #ec38bc;">
+                  <img src="{{galeria.imagen_principal.url}}" alt="Sample Image" />
+                  <figcaption>
+                    <div class="c4-rotate-up-right c4-delay-200">
+                      <h2>
+                        {{ galeria.titulo}}
+                      </h2>
+                    </div>
+                    <div class="c4-rotate-down-left c4-delay-200">
+                   
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </a>
+            </div>
+
+            {% endfor %}  
+                 
+           
+
+
+
+
+            
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+    
+{% endblock contenido %}

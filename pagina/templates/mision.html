@@ -1,0 +1,73 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block titulo %} Misión {% endblock titulo %}
+
+
+{% block contenido %}
+    
+
+
+<section class="space sub-header">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sub-header_content">
+                  
+                    <h2 class="animate__animated animate__fadeInLeft">!Servicios Tecnológicos al Servicio de la Salud!</h4>
+                    <span><i></i></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sub-header_main animate__animated animate__fadeInUp">
+                    <h2>Misión</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="space animate__animated animate__fadeInUp">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-5 mt-5">
+                <div class="news-img-block">
+                    <img src="{% static 'images/vensalud/mision.jpg' %}" class="img-fluid rounded" alt="#" />
+                    <a class="video-play-button popup-youtube" href="{% static 'images/vensalud/MISION.mp4' %}">
+                        <span></span>
+                    </a>
+                    <div id="video-overlay" class="video-overlay">
+                        <a class="video-overlay-close">&times;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="video-play-text">
+                 
+                    <h2>Misión</h2>
+                    <p class="text-justify">
+                        VENSALUD, S.A; es una empresa del Estado
+Venezolano, creada con el propósito de fortalecer la red
+hospitalaria y ambulatoria que integra el Sistema Público Nacional de Salud (SPNS) a través
+de la oportuna distribución e instalación de
+equipamiento nuevo y recuperación del equipamiento
+médico quirúrgico y mobiliario existente, para
+incrementar las capacidades de atención en materia de
+salud de manera eficiente.
+</p> 
+
+
+                        
+
+                    <hr />
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+{% endblock contenido %}
